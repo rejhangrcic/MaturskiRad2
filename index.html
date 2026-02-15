@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>API Integration - Final Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="container">
+    <h1>API Integration and Working with External Services</h1>
+    <p class="subtitle">OpenWeather API + GitHub API</p>
+  </header>
+
+  <main class="container grid">
+    
+    <section class="card">
+      <h2>Weather Data (OpenWeather)</h2>
+
+      <div class="row">
+        <input id="cityInput" type="text" placeholder="Enter city name (e.g. Sarajevo)" />
+        <button id="weatherBtn">Show weather</button>
+      </div>
+
+      <div id="weatherStatus" class="status"></div>
+      <div id="weatherResult" class="result"></div>
+    </section>
+
+    <section class="card">
+      <h2>GitHub User</h2>
+
+      <div class="row">
+        <input id="userInput" type="text" placeholder="Enter GitHub username (e.g. torvalds)" />
+        <button id="githubBtn">Show user</button>
+      </div>
+
+      <div id="githubStatus" class="status"></div>
+      <div id="githubResult" class="result"></div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <small>Treća gimnazija Sarajevo — Rejhan Grcić</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
